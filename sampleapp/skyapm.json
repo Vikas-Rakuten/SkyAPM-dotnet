@@ -1,0 +1,34 @@
+{
+  "SkyWalking": {
+    "ServiceName": "sample_app",
+    "Namespace": "",
+    "HeaderVersions": [
+      "sw8"
+    ],
+    "Sampling": {
+      "SamplePer3Secs": -1,
+      "Percentage": -1.0
+    },
+    "Logging": {
+      "Level": "Information",
+      "FilePath": "logs/skyapm-{Date}.log"
+    },
+    "Transport": {
+      "Interval": 3000,
+      "ProtocolVersion": "v8",
+      "QueueSize": 30000,
+      "BatchSize": 3000,
+      "gRPC": {
+        "Servers": "dev-grpc.35.200.176.64.sslip.io:443",
+        "Timeout": 10000,
+        "ConnectTimeout": 10000,
+        "ReportTimeout": 600000,
+        "Authentication": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWFtSWQiOiI3ZjAxZTg5Mi1mYTY0LTQwNWUtOTYzYS01ODVlODY1Y2JhZDMiLCJiaWxsaW5nX2lkIjoiYzM3NDU4ZTgtMzI3Yi00NzIyLWEzYzctMWY2NTk5ODNjYWE5IiwiaWF0IjoxNjE4ODM4NjgxLCJhdWQiOiJvYXAiLCJpc3MiOiJzaXh0aC1zZW5zLWF1dGgifQ.ZEYP4TIj9NzUEbtlnoujlJu_0dD6TcQ-Jqa2sgGukYQ"
+      }
+    }
+  }
+}
+
+
+
+
